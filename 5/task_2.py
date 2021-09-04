@@ -4,6 +4,6 @@ with open('file_task_2.txt') as file_:
     file_.seek(0)
     list_ = file_.readlines()
     for i in range(len(list_)):
-        a += list_[i].count(' ')
-        number_words = len(list_) + a
-    print('number of words: ', number_words)
+        a = list_[i].count(' ')
+        number_words = 1 + a
+        print('number of words in line', {i+1}, ' ',number_words)
